@@ -1,0 +1,49 @@
+/* Form*/
+
+#form {
+    background: rgb(255,254,252);
+    background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
+    border-radius: 0 30px;
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-error {
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+}
+
+input {
+    height: 50px;
+    margin-bottom: 30px;
+    border-color: var(--orange);
+}
+  
+textarea {
+    height: 200px;
+    border-color: var(--orange);
+    border-width: 2px;
+}
+
+.message {
+    margin-top: 20px;
+}
+
+/* above ipad */
+
+@media only screen and (min-width: 770px) {
+
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .contact {
+        background: rgb(255,254,252);
+        background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
+    }
+
+}

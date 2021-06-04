@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The hopeful news blog: Blog posts page</title>
+    <meta name="description" content="This is the blog page of the hopeful news. Here you can read an excerpt of the latest news, and click on it to read further.">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/blog.css">
+</head>
+<body>
+    <header>
+        <div class="full-nav">
+            <div class="top-nav-mobile">
+                <a href="index.html"><img class="logo top-logo" src="images/logo.svg" alt="Logo. Sunrise"></a>
+                <div hamburger-button>
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="list-top">
+                <a href="index.html"><img class="logo top-logo desktop-logo" src="images/logo.svg" alt="Logo. Sunrise"></a>
+                    <li><a class="home" href=index.html>Home</a></li>
+                    <li><a class="about" href=about.html>About</a></li>
+                    <li><a class="blog" href="blog.html">Blog</a></li>            
+                    <li><a class="contact" href=contact.html>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Latest news</h2>
+
+        <div class="wrapper">
+            <article class="posts">
+                <div class="loader"></div>
+            </article>
+
+            <button class="show-more">Show more</button>
+
+        </div>
+    </main>
+    <footer>
+        <div class="bottom-nav">
+            <ul class="list-bottom">
+                <li class="home-bottom"><a href=index.html>Home</a></li>
+                <li class="about-bottom"><a href=about.html>About</a></li>
+                <li class="blog-bottom"><a href="blog.html">Blog</a></li>            
+                <li class="contact-bottom"><a href=contact.html>Contact</a></li>
+            </ul>
+            <div class="info-flex">
+                <div class="info">
+                    <p class="info-bottom">Instagram</p>
+                    <p class="info-bottom">Twitter</p>
+                    <p class="info-bottom">hopeful.news@gmail.com</p>
+                </div>
+                <div class="logo-container">
+                    <a href="index.html"><img class="logo name-bottom" src="images/logo.svg" alt="Logo. Sunrise"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

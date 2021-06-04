@@ -1,0 +1,48 @@
+/* Image*/
+
+.post-image {
+    height: 250px;
+    background-size: cover;
+    background-position: bottom;
+    cursor: pointer;
+}
+
+
+/*Links*/
+
+a {
+    color: var(--orange);
+}
+
+/* focused image */
+
+.background {
+    background-color: rgba(6,12,10, 1);
+}
+
+/* above ipad */
+
+@media only screen and (min-width: 770px) {
+
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .post-image {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 533px;
+    }
+
+    .enlarged-image {
+        height: 625px;
+        width: 987.5px;
+        align-self: center;
+    }
+
+    .blog {
+        background: rgb(255,254,252);
+        background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
+    }
+}

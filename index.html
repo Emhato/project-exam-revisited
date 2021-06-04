@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The hopeful news blog: Home page</title>
+    <meta name="description" content="This is the home page of the hopeful news. Here you can find the latest happy and hopeful news. If you scroll down, you can also find the latest posts.">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/blog.css">
+    <link rel="stylesheet" href="style/home.css">
+</head>
+<body>
+    <header>
+        <div class="full-nav">
+            <div class="top-nav-mobile">
+                <a href="index.html"><img class="logo top-logo" src="images/logo.svg" alt="Logo. Sunrise"></a>
+                <div hamburger-button>
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="list-top">
+                <a href="index.html"><img class="logo top-logo desktop-logo" src="images/logo.svg" alt="Logo. Sunrise"></a>
+                    <li><a class="home" href=index.html>Home</a></li>
+                    <li><a class="about" href=about.html>About</a></li>
+                    <li><a class="blog" href="blog.html">Blog</a></li>            
+                    <li><a class="contact" href=contact.html>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <div class="carousel-header">
+            <h1 class="header header1">Welcome to The Hopeful News!</h1>
+        </div>
+
+        <div class="desktop-flex">
+            <div class="carousel-circle">       
+                <div class="carousel-images">
+                    <div class="loader"></div>
+                </div>
+                <div class="arrows">
+                    <span tabindex="0" role="button" aria-label="past-story" class="arrow arrow-left"><i class="fas fa-chevron-left"></i></span>
+                    <span tabindex="0" role="button" aria-label="next-story" class="arrow arrow-right"><i class="fas fa-chevron-right"></i></span>   
+                </div>
+            </div> 
+
+            <div class="text-section">
+                <div class="carousel-text">
+                    <p class="fade text text1">Though the news might make it seem like the world is comming to an end, there are lots of awesome 
+                        things that happen on this planet every single day. We aim to find the best of those stories each week. To makes You 
+                        happy and hopeful!</p>                              
+                </div>
+            </div>
+        </div>
+
+        <h3 class="latest-news">Latest news</h3>
+
+        <div class="wrapper">
+            <article class="posts">
+              <div class="loader"></div>
+            </article>
+            <button class="show-more">Show more</button>
+        </div>
+
+    </main>
+    <footer>
+        <div class="bottom-nav">
+            <ul class="list-bottom">
+                <li class="home-bottom"><a href=index.html>Home</a></li>
+                <li class="about-bottom"><a href=about.html>About</a></li>
+                <li class="blog-bottom"><a href="blog.html">Blog</a></li>            
+                <li class="contact-bottom"><a href=contact.html>Contact</a></li>
+            </ul>
+            <div class="info-flex">
+                <div class="info">
+                    <p class="info-bottom">Instagram</p>
+                    <p class="info-bottom">Twitter</p>
+                    <p class="info-bottom">hopeful.news@gmail.com</p>
+                </div>
+                <div class="logo-container">
+                    <a href="index.html"><img class="logo name-bottom" src="images/logo.svg" alt="Logo. Sunrise"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
