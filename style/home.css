@@ -112,11 +112,8 @@ h1 {
 /* buttons */ 
 
 .readMoreButton {
-    align-self: center;
-}
-
-.readMoreButton {
     display: none;
+    align-self: center;
 }
 
 .button1 {

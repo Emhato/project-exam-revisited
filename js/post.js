@@ -25,7 +25,7 @@ async function getDetails() {
         metaDescription.innerHTML = `name="description" content="This is the content page of the hopeful news. Here you can read the article: ${data.title.rendered}"`;
 
         post.innerHTML = `<div class="results">
-                            <h2 class="remove1">${data.title.rendered}</h2>
+                            <h1 class="remove1">${data.title.rendered}</h1>
                             <div tabindex="0" role="button" aria-label="enlarge" class="post-image"
                                 style="background-image: url('${data.better_featured_image.source_url}')" alt="${data.title.rendered}"></div>
                             <p class="remove2">${data.content.rendered}</p>

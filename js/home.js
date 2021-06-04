@@ -22,9 +22,9 @@ async function getPosts() {
                 break;
             }
 
-            theHeader.innerHTML += `<h2 class="header header2">${data[0].title.rendered}</h2>
-                                <h2 class="header header3">${data[1].title.rendered}</h2>
-                                <h2 class="header header4">${data[2].title.rendered}</h2>
+            theHeader.innerHTML += `<h1 class="header header2">${data[0].title.rendered}</h1>
+                                <h1 class="header header3">${data[1].title.rendered}</h1>
+                                <h1 class="header header4">${data[2].title.rendered}</h1>
                                 `;
 
             images.innerHTML += `<section class="carousel-section">
@@ -41,8 +41,7 @@ async function getPosts() {
                                 `;
 
 
-            buttonPlace.innerHTML += `<a href="about.html" class="readMoreButton button1"><button class="read-more">Read more!</button></a>
-                                    <a href="blog-post.html?id=${data[0].id}" class="readMoreButton button2"><button class="read-more">Read more!</button></a>
+            buttonPlace.innerHTML += `<a href="blog-post.html?id=${data[0].id}" class="readMoreButton button2"><button class="read-more">Read more!</button></a>
                                     <a href="blog-post.html?id=${data[1].id}" class="readMoreButton button3"><button class="read-more">Read more!</button></a>
                                     <a href="blog-post.html?id=${data[2].id}" class="readMoreButton button4"><button class="read-more">Read more!</button></a>
                                     `;
@@ -71,8 +70,6 @@ getPosts().then(() => {
     const text2 = document.querySelector(".text2");
     const text3 = document.querySelector(".text3");
     const text4 = document.querySelector(".text4");
-
-    const circleIndicator = document.querySelector(".circle-indicator");
 
     const button1 = document.querySelector(".button1");
     const button2 = document.querySelector(".button2");
@@ -109,15 +106,6 @@ getPosts().then(() => {
         text3.classList.remove("fade");
         text4.classList.remove("fade");
         
-        
-        
-        //circle indicator
-        circleIndicator.innerHTML = `<span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                    <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                    <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                    <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                    `;
-        
         // button
         button1.style.display = "block";
         
@@ -150,15 +138,6 @@ getPosts().then(() => {
         text1.classList.remove("fade");
         text3.classList.remove("fade");
         text4.classList.remove("fade");
-
-
-        //circle indicator
-        circleIndicator.innerHTML = `
-                                    <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                    <span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                    <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                    <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                    `;
 
         // button
         button2.style.display = "block";
@@ -193,14 +172,6 @@ getPosts().then(() => {
         text2.classList.remove("fade");
         text4.classList.remove("fade");
 
-        // circle indicator
-        circleIndicator.innerHTML = `
-                                    <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                    <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                    <span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                    <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                    `;
-
         // Button
         button3.style.display = "block";
 
@@ -233,14 +204,6 @@ getPosts().then(() => {
         text1.classList.remove("fade");
         text3.classList.remove("fade");
         text2.classList.remove("fade");
-
-        //circle indicator
-        circleIndicator.innerHTML = `
-                                    <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                    <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                    <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                    <span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                    `;
 
         // Button
         button4.style.display = "block";
@@ -276,14 +239,6 @@ getPosts().then(() => {
             text3.classList.remove("fade");
             text4.classList.remove("fade");
 
-            //circle indicator
-            circleIndicator.innerHTML = `
-                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                        `;
-
             // button
             button2.style.display = "block";
 
@@ -311,14 +266,6 @@ getPosts().then(() => {
             text2.classList.remove("fade");
             text4.classList.remove("fade");
 
-            // circle indicator
-            circleIndicator.innerHTML = `
-                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                        `;
-
             // Button
             button3.style.display = "block";
 
@@ -345,14 +292,6 @@ getPosts().then(() => {
             text3.classList.remove("fade");
             text2.classList.remove("fade");
 
-            //circle indicator
-            circleIndicator.innerHTML = `
-                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                        `;
-
             // Button
             button4.style.display = "block";
 
@@ -378,15 +317,6 @@ getPosts().then(() => {
             text2.classList.remove("fade");
             text3.classList.remove("fade");
             text4.classList.remove("fade");
-
-
-
-            //circle indicator
-            circleIndicator.innerHTML = `<span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                        `;
 
             // button
             button1.style.display = "block";
@@ -422,14 +352,6 @@ getPosts().then(() => {
             text2.classList.remove("fade");
 
 
-            //circle indicator
-            circleIndicator.innerHTML = `
-                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                        `;
-
             // Button
             button4.style.display = "block";
 
@@ -457,15 +379,6 @@ getPosts().then(() => {
             text3.classList.remove("fade");
             text4.classList.remove("fade");
 
-
-
-            //circle indicator
-            circleIndicator.innerHTML = `<span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                        `;
-
             // button
             button1.style.display = "block";
 
@@ -492,14 +405,6 @@ getPosts().then(() => {
             text3.classList.remove("fade");
             text4.classList.remove("fade");
 
-            //circle indicator
-            circleIndicator.innerHTML = `
-                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                        `;
-
             // button
             button2.style.display = "block";
 
@@ -525,14 +430,6 @@ getPosts().then(() => {
             text1.classList.remove("fade");
             text2.classList.remove("fade");
             text4.classList.remove("fade");
-
-            // circle indicator
-            circleIndicator.innerHTML = `
-                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
-                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
-                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
-                                        `;
 
             // Button
             button3.style.display = "block";
