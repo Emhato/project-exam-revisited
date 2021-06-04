@@ -9,8 +9,6 @@ async function getPosts() {
         const response = await fetch(url);
 
         const data = await response.json();
-
-        console.log(data);
         
 
         posts.innerHTML = "";
@@ -32,7 +30,6 @@ async function getPosts() {
         }
     } catch (error) {
         console.log(error);
-        console.log("An error occurred");
         posts.innerHTML = "An error has occured, sorry for the inconvinience this may cause!";
     }
 
@@ -59,10 +56,6 @@ const loadMore =  async () => {
 
         const data = await response.json();
 
-        console.log(url2);
-        
-        console.log(data);
-
         if (page + 1 === 3) {
             showMore.style.display = "none";
         }
@@ -84,7 +77,6 @@ const loadMore =  async () => {
         }
     } catch (error) {
         console.log(error);
-        console.log("An error occurred");
         posts.innerHTML = "An error has occured, sorry for the inconvinience this may cause!";
     }
 

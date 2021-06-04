@@ -13,8 +13,6 @@ async function getPosts() {
 
         const data = await response.json();
 
-        console.log(data);
-
         images.innerHTML = "";
 
         for (let i = 0; i < data.length; i++) {
@@ -52,7 +50,6 @@ async function getPosts() {
         }
     } catch (error) {
         console.log(error);
-        console.log("An error occurred");
         theHeader.innerHTML = "An error has occured, sorry for the inconvinience this may cause!";
     }
 

@@ -8,8 +8,6 @@ const idParam = params.get("id");
 
 const url = "https://www.emmatonnessen.com/wp-json/wp/v2/posts/" + idParam;
 
-console.log(url);
-
 const post = document.querySelector(".post");
 const title = document.querySelector("title");
 const metaDescription = document.querySelector(".blog-description");
@@ -20,8 +18,6 @@ async function getDetails() {
         const response = await fetch(url);
 
         const data = await response.json();
-
-        console.log(data);
 
         post.innerHTML = "";
 
@@ -38,7 +34,6 @@ async function getDetails() {
 
     } catch (error) {
         console.log(error);
-        console.log("An error occurred");
         post.innerHTML = "An error has occured, sorry for the inconvinience this may cause!";
     }
 

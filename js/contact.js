@@ -38,8 +38,6 @@ function formValidation(event) {
     } else {
         emailError.style.display = "block";
     }
-
-    console.log("hello");
 }
 
 form.addEventListener("submit", formValidation);
