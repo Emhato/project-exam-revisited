@@ -1,3 +1,42 @@
+// List of posts
+
+const url = "https://emmatonnessen.com/wp-json/wp/v2/posts/?page=1";
+
+const posts = document.querySelector(".posts");
+
+async function getPostsList() {
+    try {
+        const response = await fetch(url);
+
+        const data = await response.json();
+        
+
+        posts.innerHTML = "";
+
+        for (let i = 0; i < data.length; i++) {
+
+
+            if (i === 4) {
+                break;
+            }
+
+            posts.innerHTML += `<a href="blog-post.html?id=${data[i].id}" class="result">
+                                <div class="card">
+                                <h3>${data[i].title.rendered}</h3>
+                                <p>${data[i].excerpt.rendered}</p>
+                                <p class="continue">Read more <i class="fas fa-arrow-right"></i></p>
+                                </div>
+                                </a>`;
+        }
+    } catch (error) {
+        console.log(error);
+        posts.innerHTML = "An error has occured, sorry for the inconvinience this may cause!";
+    }
+
+}
+
+getPostsList();
+
 // Carousel
 
 const urlHome = "https://emmatonnessen.com/wp-json/wp/v2/posts/";
