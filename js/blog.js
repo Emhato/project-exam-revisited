@@ -1,6 +1,8 @@
 // List of posts
 
-const url = "https://emmatonnessen.com/wp-json/wp/v2/posts/?page=1";
+const url = "https://emmaht.one/wp-json/wp/v2/posts/?page=1";
+
+// const url = "https://emmatonnessen.com/wp-json/wp/v2/posts/?page=1";
 
 const posts = document.querySelector(".posts");
 
@@ -47,7 +49,9 @@ const showMore = document.querySelector(".show-more");
 let page = 1
 
 
-const url2 = "https://emmatonnessen.com/wp-json/wp/v2/posts/?page=" ;
+const url2 = "https://emmaht.one/wp-json/wp/v2/posts/?page=" ;
+
+// const url2 = "https://emmatonnessen.com/wp-json/wp/v2/posts/?page=" ;
 
 const loadMore =  async () => {
     try {

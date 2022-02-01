@@ -1,6 +1,8 @@
 // List of posts
 
-const url = "https://emmatonnessen.com/wp-json/wp/v2/posts/?page=1";
+const url = "https://emmaht.one/wp-json/wp/v2/posts/?page=1";
+
+// const url = "https://emmatonnessen.com/wp-json/wp/v2/posts/?page=1";
 
 const posts = document.querySelector(".posts");
 
@@ -39,7 +41,9 @@ getPostsList();
 
 // Carousel
 
-const urlHome = "https://emmatonnessen.com/wp-json/wp/v2/posts/";
+const urlHome = "https://emmaht.one/wp-json/wp/v2/posts/";
+// const urlHome = "https://emmatonnessen.com/wp-json/wp/v2/posts/";
+
 
 const images = document.querySelector(".carousel-images");
 const theHeader = document.querySelector(".carousel-header");

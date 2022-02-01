@@ -6,7 +6,9 @@ const params = new URLSearchParams(queryString);
 
 const idParam = params.get("id");
 
-const url = "https://www.emmatonnessen.com/wp-json/wp/v2/posts/" + idParam;
+const url = "https://www.emmaht.one/wp-json/wp/v2/posts/" + idParam;
+
+// const url = "https://www.emmatonnessen.com/wp-json/wp/v2/posts/" + idParam;
 
 const post = document.querySelector(".post");
 const title = document.querySelector("title");
